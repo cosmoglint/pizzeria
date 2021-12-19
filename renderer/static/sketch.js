@@ -8,6 +8,8 @@ function random_color(){
 function init(){
   ww = windowWidth;
   wh = windowHeight;
+  wcx = ww/2;
+  wcy = wh/2;
   canvas = createCanvas(ww,wh);
   canvas.style('z-index','-1');
   canvas.position(0,0);

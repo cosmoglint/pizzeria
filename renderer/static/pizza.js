@@ -6,6 +6,6 @@ function Pizza(radius, base){
 
 Pizza.prototype = {
   show: function(){
-    circle(mouseX,mouseY,100);
+    circle(wcx,wcy,this.radius);
   }
 }
