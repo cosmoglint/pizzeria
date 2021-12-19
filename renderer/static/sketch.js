@@ -14,7 +14,7 @@ function init(){
   canvas = createCanvas(ww,wh);
   canvas.style('z-index','-1');
   canvas.position(0,0);
-  let customization = {"cheese": "mozzerella"};
+  let customization = {"cheese": "mozzerella", "base": "flatbread", "topping": "olive", "sauce": "mushroomj"};
   pizza = new Pizza(100, 'red', customization);
 }
 

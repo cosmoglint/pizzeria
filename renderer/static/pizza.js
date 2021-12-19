@@ -1,5 +1,5 @@
 // contents = require('./contnet/mappings.json')
-contents = fetch('./content/mappings.json').then(response => response.json());
+// image_mappings = fetch('./content/mappings.json').then(response => response.json());
 
 function Pizza(radius, base, customization){
   this.radius = radius;
@@ -16,14 +16,14 @@ Pizza.prototype = {
   },
   gather_ingredients: function(key){
     let custom_value = this.customization[key];
-    let data = contents[custom_value];
+    let data = image_mappings[custom_value];
     return data
   },
   load_assets: function(){
-    let base = gather_ingredients(base);
-    let cheese = gather_ingredients(cheese);
-    let topping = gather_ingredients(topping);
-    let sauce = gather_ingredients(sauce);
+    let base = this.gather_ingredients("base");
+    let cheese = this.gather_ingredients("cheese");
+    let topping = this.gather_ingredients("topping");
+    let sauce = this.gather_ingredients("sauce");
     loadImage(base, img => {
       this.base = img;
       loadImage(cheese, img => {
