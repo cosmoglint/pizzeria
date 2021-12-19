@@ -9,11 +9,13 @@ function init(){
   ww = windowWidth;
   wh = windowHeight;
   wcx = ww/2;
+  wcx = ww/2;
   wcy = wh/2;
   canvas = createCanvas(ww,wh);
   canvas.style('z-index','-1');
   canvas.position(0,0);
-  pizza = new Pizza(100, 'red');
+  let customization = {"cheese": "mozzerella"};
+  pizza = new Pizza(100, 'red', customization);
 }
 
 function setup(){
