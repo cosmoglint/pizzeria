@@ -14,7 +14,7 @@ Pizza.prototype = {
       circle(wcx,wcy,this.radius);
     }
   },
-  gather_ingredients: function(key){
+  gather_ingredients: async function(key){
     let custom_value = this.customization[key];
     let data = image_mappings[custom_value];
     return data
