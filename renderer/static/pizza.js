@@ -12,6 +12,7 @@ Pizza.prototype = {
   show: function(){
     if (this.image_preloaded) {
       circle(wcx,wcy,this.radius);
+
     }
   },
   gather_ingredients: async function(key){
