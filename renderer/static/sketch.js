@@ -25,6 +25,6 @@ function setup(){
 
 function draw(){
   pizza.load_assets();
-  pizza.show();
+  // pizza.show();
   // circle(mouseX,mouseY,100);
 }

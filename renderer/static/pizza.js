@@ -21,19 +21,21 @@ Pizza.prototype = {
     return data
   },
   load_assets: function(){
-    let base = this.gather_ingredients("base");
-    let cheese = this.gather_ingredients("cheese");
-    let topping = this.gather_ingredients("topping");
-    let sauce = this.gather_ingredients("sauce");
-    loadImage(base, img => {
-      this.base = img;
-      loadImage(cheese, img => {
-        this.cheese = img;
-        loadImage(topping, img => {
-          this.topping = img;
-          parent.image_loaded = true;
-        });
-      });
-    });
+    img = loadImage('/Users/ramprakash/Downloads/000-random.png');
+    image(img, 0, 0)
+//    let base = this.gather_ingredients("base");
+//    let cheese = this.gather_ingredients("cheese");
+//    let toppjng = this.gather_ingredients("topping");
+//    let sauce = this.gather_ingredients("sauce");
+//    loadImage(base, img => {
+//      this.base = img;
+//      loadImage(cheese, img => {
+//        this.cheese = img;
+//        loadImage(topping, img => {
+//          this.topping = img;
+//          parent.image_loaded = true;
+//        });
+//      });
+//    });
   },
 }
